@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dignans Cafe</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    header {
+      background-image: url('images/foodheader.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px; /* Increase header height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: black; /* Adjust text color for better readability */
+      border: 2px solid white; /* Add border around the header */
+      padding: 15px; /* Add padding to make text appear away from the border */
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      height: 80%; /* Decrease columns height */
+    }
+
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+ 
+  </style>
+</head>
+
+<body>
+
+<header style="background-image: url('images/foodheader.jpg');">
+  <h1>Dignans Cafe</h1>
+</header>
+
+<nav>
+  <a href="#" class="active">Home</a>
+  <a href="Menu.html">Menus</a>
+  <a href="Orders.html">Order </a>
+  <a href="Accounts.html">Login / Sign up</a>
+</nav>
+
+<div class="container">
+  <div class="column">
+    <div class="content">
+      <h2>About us.</h2>
+      <p>We at Dignans are a well renowned cafe located in Edinburgh. Our cafe has been serving the best variety of foods here over the last 5 years. Constantly keeping you guys happy with our good service, amazing staff and our very tasty food of course! Come in to the shop, book us or call ahead. The contact info is on the bottom of the page.</p>
+      <img src="images/cafestaff.jpg" alt="Smiling cafe worker">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <h2>Where are we?</h2>
+      <p>Our cafe is located on 57 High Street, Edinburgh, EH1 1SR.</p><br>
+      <img src="images/Map.png" alt="Map of Edinburgh">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <h2>Customer Reviews.</h2>
+      <p>Name: Amanda Thompson <br>
+        Rating: ⭐⭐⭐⭐⭐ <br>
+        "I ordered the BBQ package for a summer office party. They were able to cater to all of the staff's preferences. The food was outstanding! It was what BBQ's should be. Will definitely be booking again!"
+      </p>
+      <p>Name: Jason Lee <br>
+        Rating: ⭐⭐⭐⭐⭐<br>
+        "The special offers are what caught my eye. Great deals, great food and better prices!"
+      </p>
+      <p>
+        Name: Amanda Thompson <br>
+        Rating: ⭐⭐⭐⭐⭐ <br>
+        "Took a chance on a local business for a garden party. Oh my, it was an amazing chance. Dignams party package was absolutely bangin'! "
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Contact info: E-mail, DignamsCafe@Gmail.com & Telephone: 0131 123 4567</p>
+</footer>
+
+</body>
+</html>

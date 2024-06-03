@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    header {
+      background-image: url('images/foodheader.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 200px; /* Set a suitable height for the header */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: black; /* Adjust text color for better readability */
+      border: 2px solid white; /* Add border around the header */
+      padding: 15px; /* Add padding to make text appear away from the border */
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .column {
+      flex: 0 0 30%; /* Fixed width for each column */
+      margin: 10px;
+      text-align: center;
+      box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    }
+
+    .content {
+      padding: 10px;
+    }
+
+    .content img {
+      width: 100%; /* Make the image take up the full width of the column */
+      height: 200px; /* Fixed height for the images */
+      object-fit: cover; /* Ensure the images cover the entire area without distortion */
+      display: block;
+      margin: 0 auto; /* Center the images */
+    }
+
+    .content h2 a {
+      color: black; /* Make the hyperlinks in the headers black */
+      text-decoration: none; /* Remove underline from the links */
+    }
+
+    .content h2 a:hover {
+      text-decoration: underline; /* Add underline on hover for better UX */
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header style="background-image: url('images/foodheader.jpg');">
+    <h1>Dignans Cafe</h1>
+  </header>
+
+  <nav>
+    <a href="Dignams.HTML">Home</a>
+    <a href="#" class="active">Menus</a>
+    <a href="Orders.html">Order </a>
+    <a href="Accounts.html">Login / Sign up </a>
+  </nav>
+
+  <div class="container">
+    <div class="column">
+      <div class="content">
+        <h2><a href="menu1.html">Breakfast & Lunch Menus!</a></h2>
+        <img src="images/breakfast.jpg" alt="Breakfast image">
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <h2><a href="menu2.html">Party Menu, Executive Menu & BBQ Menus!</a></h2>
+        <img src="images/bbq.png" alt="BBQ image">
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <h2><a href="menu3.html">Special Offers, Everyday Nibbles & Dressings!</a></h2>
+        <img src="images/party-nibbles.jpg" alt="Everyday finger food">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Contact info: E-mail, DignamsCafe@Gmail.com & Telephone: 0131 123 4567</p>
+  </footer>
+</body>
+</html>
+
+

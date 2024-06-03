@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('images/foodheader.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: black;
+            border: 2px solid white;
+            padding: 15px;
+        }
+  
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch; /* Adjusted to stretch both columns */
+            min-height: calc(100vh - 260px); /* Adjusted to account for header and footer heights */
+        }
+        .column {
+            flex: 1; /* Adjusted to make both columns equal height */
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dignans Cafe</h1>
+    </header>
+    <nav>
+        <a href="Dignams.HTML">Home</a>
+        <a href="Menu.html">Menus</a>
+        <a href="Orders.html">Order</a>
+        <a href="Accounts.html">Login / Sign up</a>
+    </nav>
+    <div class="container">
+        <div class="column">
+            <h2>Breakfast Menu</h2>
+            <ul>
+                <li>Breakfast £4.50 per person</li>
+                <li>Hot bacon rolls</li>
+                <li>Fresh orange juice or fruit smoothie</li>
+                <li>Tea and coffee</li>
+                <li>Continental £5.50 per person</li>
+                <li>Croissants jam and butter</li>
+                <li>Danish pastries</li>
+                <li>Scones with whipped cream and jam compote</li>
+                <li>Mixed fruit platter</li>
+                <li>Fresh orange juice or fruit smoothie</li>
+                <li>Tea and coffee</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Lunch Menu</h2>
+            <p>Freshly prepared rolls, baguettes, sandwiches, ciabattas, salad, and fruit boxes, plus lots more delivered to your door.
+                ‘Mix and munch’ deal — pick two or more items from any section and get 10% discount. Hot fayre. Fresh homemade soup available daily £0.90 Homemade corned beef stovies £1.30
+            </p>
+            <br>
+            <ul>
+                <li>Sandwiches, rolls, and baguette fillings prices from £1.10–£1.70</li>
+                <li>Chicken caesar</li>
+                <li>Ham and port salut</li>
+                <li>Chicken and sweetcorn</li>
+                <li>Brie and cranberry</li>
+                <li>Egg and cress</li>
+                <li>Tuna and sweetcorn</li>
+                <li>Greek salad</li>
+                <li>BLT</li>
+                <li>Roast beef with horseradish</li>
+                <li>Turkey and coleslaw</li>
+                <li>Cheese savoury</li>
+                <li>Club sandwich</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>Contact info: E-mail, DignamsCafe@Gmail.com & Telephone: 0131 123 4567</p>
+    </footer>
+</body>
+</html>

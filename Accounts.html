@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('images/foodheader.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: black;
+            border: 2px solid white;
+            padding: 15px;
+        }
+  
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch; /* Adjusted to stretch both columns */
+            min-height: calc(100vh - 260px); /* Adjusted to account for header and footer heights */
+        }
+        .column {
+            flex: 1; /* Adjusted to make both columns equal height */
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dignans Cafe</h1>
+    </header>
+    <nav>
+        <a href="Dignams.HTML">Home</a>
+        <a href="Menu.html">Menus</a>
+        <a href="Orders.html">Order </a>
+        <a href="#" class="active">Login / Sign up </a>
+    </nav>
+    <div class="container">
+        <div class="column">
+            <h2>Sign in</h2>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="show-signin-password">
+                <label for="show-signin-password">Show Password</label>
+            </div>
+            <button>Sign in</button>
+        </div>
+        <div class="column">
+            <h2>Sign up</h2>
+            <div class="form-group">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="signup-email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="signup-password" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <label for="repeat-password">Repeat Password:</label>
+                <input type="password" id="repeat-password" name="repeat-password" placeholder="Repeat your password">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="show-signup-password">
+                <label for="show-signup-password">Show Password</label>
+            </div>
+            <button>Sign up</button>
+        </div>
+    </div>
+    <footer>
+        <p>Contact info: E-mail, DignamsCafe@Gmail.com & Telephone: 0131 123 4567</p>
+    </footer>
+</body>
+</html>
